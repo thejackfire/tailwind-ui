@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://tailwindui.com/components -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@tailwindcss">
+    <meta name="twitter:title" content="Tailwind UI">
+    <meta name="twitter:description" content="Beautiful UI components by the creators of Tailwind CSS.">
+    <meta name="twitter:image" content="https://tailwindui.com/img/twitter-card.png">
+    <meta name="twitter:creator" content="@tailwindcss">
+    <meta property="og:url" content="https://www.tailwindui.com/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Tailwind UI">
+    <meta property="og:description" content="Beautiful UI components by the creators of Tailwind CSS.">
+    <meta property="og:image" content="https://tailwindui.com/img/twitter-card.png">
+    <meta property="description" content="Beautiful UI components by the creators of Tailwind CSS.">
+    <meta name="csrf-token" content="WKk5ocxP6XkONe5XS3q9cNzzDOLPEJI9mVPOBuDZ">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://tailwindui.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://tailwindui.com/favicon-16x16.png">
+    <link rel="stylesheet" href="./Tailwind UI - Official Tailwind CSS Components_files/inter.css">
+    <link rel="stylesheet" href="./Tailwind UI - Official Tailwind CSS Components_files/app.css">
+    <title>Tailwind UI - Official Tailwind CSS Components</title>
+    <script src="./Tailwind UI - Official Tailwind CSS Components_files/script.js.download" site="SOXJJCZQ" defer=""></script>
+      <script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script></head>
+  <body class="font-sans antialiased text-gray-900 " cz-shortcut-listen="true">
+    <header class="relative z-10 border-b border-gray-200 bg-white">
+  <div class="flex items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+    <div class="md:flex items-center">
+      <a href="https://tailwindui.com/components" class="block">
+        <img class="h-6 w-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/tailwindui-logo.svg" alt="Tailwind UI">
+      </a>
+      <p class="hidden md:block mt-2 ml-3 text-sm text-gray-500 md:mt-0">
+                <span>
+          <span class="bg-pink-100 px-2 py-1 rounded text-pink-900 font-medium">Now updated for Tailwind CSS v2.0!</span>
+          <a href="https://tailwindui.com/changes-for-v2" class="ml-2 font-medium text-gray-500 hover:text-gray-900">Learn more →</a>
+        </span>
+              </p>
+    </div>
+
+        <div class="flex text-sm">
+      <a href="https://tailwindui.com/components" class="hidden lg:inline font-medium text-gray-500 hover:text-gray-900">
+        Components
+      </a>
+      <a href="https://tailwindui.com/documentation" class="hidden lg:inline ml-12 font-medium text-gray-500 hover:text-gray-900">
+        Documentation
+      </a>
+      <div x-data="{ open: false }" @keydown.escape="open = false" @click.away="open = false" class="ml-12 relative">
+        <div>
+          <button @click="open = !open" class="flex items-center text-gray-400 hover:text-gray-600">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+            </svg>
+          </button>
+        </div>
+        <div x-show="open" style="display: none;" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="origin-top-right absolute right-0 mt-2 w-56 min-w-max rounded-md shadow-lg">
+          <div class="rounded-md bg-white shadow-xs">
+            <div class="px-4 py-3">
+              <p class="text-sm">Signed in as</p>
+              <p class="text-sm font-medium text-gray-900">shoaib@actonate.com</p>
+            </div>
+            <div class="border-t border-gray-100"></div>
+            <div class="py-1">
+              <a href="https://tailwindui.com/components" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 lg:hidden">Components</a>
+              <a href="https://tailwindui.com/documentation" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 lg:hidden">Documentation</a>
+              <a href="https://tailwindui.com/changelog" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Changelog</a>
+              <a href="https://tailwindui.com/support" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Support</a>
+              <a href="https://tailwindui.com/license" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">License</a>
+            </div>
+            <div class="border-t border-gray-100"></div>
+
+                                        <div class="py-1">
+                <a href="https://tailwindui.com/v1/components" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Switch to v1</a>
+              </div>
+                          
+            <div class="border-t border-gray-100"></div>
+            <div class="py-1">
+              <a href="https://tailwindui.com/account-settings" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Account settings</a>
+              <form method="POST" action="https://tailwindui.com/logout">
+                <input type="hidden" name="_token" value="WKk5ocxP6XkONe5XS3q9cNzzDOLPEJI9mVPOBuDZ">                <button type="submit" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                  Sign out
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+  <div class="md:hidden mt-1 px-4 pb-4 sm:px-6 lg:px-8">
+    <p class="text-sm text-gray-500 md:mt-0">
+            <span>
+        <span class="bg-pink-100 px-2 py-1 rounded text-pink-900 font-medium">Now updated for Tailwind CSS v2.0!</span>
+        <a href="https://tailwindui.com/changes-for-v2" class="ml-2 font-medium text-gray-500 hover:text-gray-900">Learn more →</a>
+      </span>
+          </p>
+  </div>
+</header>
+<main>
+  
+
+
+
+<div class="max-w-8xl mx-auto grid grid-cols-1 gap-y-16 px-4 py-4 sm:px-6 sm:py-12 lg:px-8">
+    <div id="product-marketing">
+    <div class="pb-2">
+      <div class="h-5"></div>
+    </div>
+    <h2 class="text-2xl font-semibold tracking-tight font-display text-gray-900 sm:text-3xl">
+      Marketing
+    </h2>
+    <div class="mt-6 grid grid-cols-1 gap-y-8">
+            <div id="product-marketing-sections" class="border-t border-gray-200 pt-8 grid grid-cols-1 gap-y-6 lg:grid-cols-4 lg:gap-5">
+        <div>
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Page Sections
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 md:grid-cols-3 lg:col-span-3">
+                     <a href="/Hero Sections - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/sections-heroes.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Hero Sections</span>
+                                  </p>
+                <p class="text-sm text-gray-500">6 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Feature Sections - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/sections-feature-sections.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Feature Sections</span>
+                                  </p>
+                <p class="text-sm text-gray-500">6 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/CTA Sections - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/sections-cta-sections.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> CTA Sections</span>
+                                  </p>
+                <p class="text-sm text-gray-500">7 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Pricing Sections - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/sections-pricing.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Pricing Sections</span>
+                                  </p>
+                <p class="text-sm text-gray-500">7 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Header Sections - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/sections-header.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Header Sections</span>
+                                  </p>
+                <p class="text-sm text-gray-500">3 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/FAQs - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/sections-faq-sections.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> FAQs</span>
+                                  </p>
+                <p class="text-sm text-gray-500">6 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Newsletter Sections - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/sections-newsletter-sections.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Newsletter Sections</span>
+                                  </p>
+                <p class="text-sm text-gray-500">3 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Stats - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/sections-stats-sections.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Stats</span>
+                                  </p>
+                <p class="text-sm text-gray-500">3 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Testimonials - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/sections-testimonials.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Testimonials</span>
+                                  </p>
+                <p class="text-sm text-gray-500">3 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Blog Sections - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/sections-blog-sections.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Blog Sections</span>
+                                  </p>
+                <p class="text-sm text-gray-500">3 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Contact Sections - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/sections-contact-sections.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Contact Sections</span>
+                                  </p>
+                <p class="text-sm text-gray-500">5 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Team Sections - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/sections-team-sections.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Team Sections</span>
+                                  </p>
+                <p class="text-sm text-gray-500">8 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Contact Sections - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/sections-content-sections.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Content Sections</span>
+                                  </p>
+                <p class="text-sm text-gray-500">5 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Footers - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/sections-footers.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Footers</span>
+                                  </p>
+                <p class="text-sm text-gray-500">7 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Logo Clouds - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/sections-logo-clouds.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Logo Clouds</span>
+                                  </p>
+                <p class="text-sm text-gray-500">5 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                   </div>
+      </div>
+            <div id="product-marketing-elements" class="border-t border-gray-200 pt-8 grid grid-cols-1 gap-y-6 lg:grid-cols-4 lg:gap-5">
+        <div>
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Elements
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 md:grid-cols-3 lg:col-span-3">
+                     <a href="/Header Sections - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/elements-headers.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Headers</span>
+                                  </p>
+                <p class="text-sm text-gray-500">4 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Banners - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/elements-banners.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Banners</span>
+                                  </p>
+                <p class="text-sm text-gray-500">4 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Flyout Menus - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/elements-flyout-menus.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Flyout Menus</span>
+                                  </p>
+                <p class="text-sm text-gray-500">6 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                   </div>
+      </div>
+            <div id="product-marketing-page-examples" class="border-t border-gray-200 pt-8 grid grid-cols-1 gap-y-6 lg:grid-cols-4 lg:gap-5">
+        <div>
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Page Examples
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 md:grid-cols-3 lg:col-span-3">
+                     <a href="/Pricing Pages - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/page-examples-pricing-pages.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Pricing Pages</span>
+                                  </p>
+                <p class="text-sm text-gray-500">4 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <figure class="opacity-50">
+            <div class="relative rounded overflow-hidden">
+              <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/page-examples-landing-pages.svg" alt="">
+              <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 border-2 border-dashed opacity-25"></div>
+            </div>
+            <figcaption class="mt-3">
+              <p class="text-sm font-medium text-gray-900">
+                Landing Pages
+              </p>
+              <p class="text-sm text-gray-500">
+                Coming soon
+              </p>
+            </figcaption>
+          </figure>
+                      <figure class="opacity-50">
+            <div class="relative rounded overflow-hidden">
+              <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/page-examples-contact-pages.svg" alt="">
+              <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 border-2 border-dashed opacity-25"></div>
+            </div>
+            <figcaption class="mt-3">
+              <p class="text-sm font-medium text-gray-900">
+                Contact Pages
+              </p>
+              <p class="text-sm text-gray-500">
+                Coming soon
+              </p>
+            </figcaption>
+          </figure>
+                   </div>
+      </div>
+          </div>
+  </div>
+    <div id="product-application-ui">
+    <div class="pb-2">
+      <div class="h-5"></div>
+    </div>
+    <h2 class="text-2xl font-semibold tracking-tight font-display text-gray-900 sm:text-3xl">
+      Application UI
+    </h2>
+    <div class="mt-6 grid grid-cols-1 gap-y-8">
+            <div id="product-application-ui-application-shells" class="border-t border-gray-200 pt-8 grid grid-cols-1 gap-y-6 lg:grid-cols-4 lg:gap-5">
+        <div>
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Application Shells
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 md:grid-cols-3 lg:col-span-3">
+                     <a href="/Stacked Layouts - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/application-shells-stacked.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Stacked Layouts</span>
+                                    <span class="inline ml-2 bg-yellow-100 rounded-full px-2 py-0.5 text-xs tracking-wide uppercase font-semibold flex-shrink-0">
+                    <span class="text-yellow-700">New</span>
+                  </span>
+                                  </p>
+                <p class="text-sm text-gray-500">9 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Sidebar Layouts - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/application-shells-sidebar.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Sidebar Layouts</span>
+                                  </p>
+                <p class="text-sm text-gray-500">8 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Multi-Column Layouts - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/application-shells-multi-column.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Multi-Column Layouts</span>
+                                  </p>
+                <p class="text-sm text-gray-500">3 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                   </div>
+      </div>
+            <div id="product-application-ui-headings" class="border-t border-gray-200 pt-8 grid grid-cols-1 gap-y-6 lg:grid-cols-4 lg:gap-5">
+        <div>
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Headings
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 md:grid-cols-3 lg:col-span-3">
+                     <a href="/Page Headings - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/headings-page-headings.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Page Headings</span>
+                                    <span class="inline ml-2 bg-yellow-100 rounded-full px-2 py-0.5 text-xs tracking-wide uppercase font-semibold flex-shrink-0">
+                    <span class="text-yellow-700">New</span>
+                  </span>
+                                  </p>
+                <p class="text-sm text-gray-500">9 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Card Headings - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/headings-card-headings.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Card Headings</span>
+                                  </p>
+                <p class="text-sm text-gray-500">5 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Section Headings - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/headings-section-headings.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Section Headings</span>
+                                  </p>
+                <p class="text-sm text-gray-500">9 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                   </div>
+      </div>
+            <div id="product-application-ui-data-display" class="border-t border-gray-200 pt-8 grid grid-cols-1 gap-y-6 lg:grid-cols-4 lg:gap-5">
+        <div>
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Data Display
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 md:grid-cols-3 lg:col-span-3">
+                     <a href="/Description Lists - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/data-display-description-lists.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Description Lists</span>
+                                  </p>
+                <p class="text-sm text-gray-500">5 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Data-Stats - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/data-display-stats.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Stats</span>
+                                  </p>
+                <p class="text-sm text-gray-500">3 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                   </div>
+      </div>
+            <div id="product-application-ui-lists" class="border-t border-gray-200 pt-8 grid grid-cols-1 gap-y-6 lg:grid-cols-4 lg:gap-5">
+        <div>
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Lists
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 md:grid-cols-3 lg:col-span-3">
+                     <a href="/Tables - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/lists-tables.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Tables</span>
+                                  </p>
+                <p class="text-sm text-gray-500">3 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Stacked Layouts - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/lists-stacked-lists.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Stacked Lists</span>
+                                    <span class="inline ml-2 bg-yellow-100 rounded-full px-2 py-0.5 text-xs tracking-wide uppercase font-semibold flex-shrink-0">
+                    <span class="text-yellow-700">New</span>
+                  </span>
+                                  </p>
+                <p class="text-sm text-gray-500">7 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Grid Lists - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/lists-grid-lists.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Grid Lists</span>
+                                    <span class="inline ml-2 bg-yellow-100 rounded-full px-2 py-0.5 text-xs tracking-wide uppercase font-semibold flex-shrink-0">
+                    <span class="text-yellow-700">New</span>
+                  </span>
+                                  </p>
+                <p class="text-sm text-gray-500">5 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Feeds - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/lists-feeds.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Feeds</span>
+                                  </p>
+                <p class="text-sm text-gray-500">3 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                   </div>
+      </div>
+            <div id="product-application-ui-forms" class="border-t border-gray-200 pt-8 grid grid-cols-1 gap-y-6 lg:grid-cols-4 lg:gap-5">
+        <div>
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Forms
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 md:grid-cols-3 lg:col-span-3">
+                     <a href="/Form Layouts - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/forms-form-layouts.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Form Layouts</span>
+                                  </p>
+                <p class="text-sm text-gray-500">5 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Input Groups - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/forms-input-groups.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Input Groups</span>
+                                  </p>
+                <p class="text-sm text-gray-500">14 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Select Menus - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/forms-select-menus.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Select Menus</span>
+                                  </p>
+                <p class="text-sm text-gray-500">6 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Sign-in and Registration - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/forms-sign-in-forms.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Sign-in and Registration</span>
+                                  </p>
+                <p class="text-sm text-gray-500">3 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Radio Groups - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/forms-radio-groups.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Radio Groups</span>
+                                  </p>
+                <p class="text-sm text-gray-500">3 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Toggles - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/forms-toggles.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Toggles</span>
+                                  </p>
+                <p class="text-sm text-gray-500">5 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Action Panels - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/forms-action-panels.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Action Panels</span>
+                                  </p>
+                <p class="text-sm text-gray-500">8 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                   </div>
+      </div>
+            <div id="product-application-ui-feedback" class="border-t border-gray-200 pt-8 grid grid-cols-1 gap-y-6 lg:grid-cols-4 lg:gap-5">
+        <div>
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Feedback
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 md:grid-cols-3 lg:col-span-3">
+                     <a href="/Alerts - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/feedback-alerts.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Alerts</span>
+                                  </p>
+                <p class="text-sm text-gray-500">6 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                   </div>
+      </div>
+            <div id="product-application-ui-navigation" class="border-t border-gray-200 pt-8 grid grid-cols-1 gap-y-6 lg:grid-cols-4 lg:gap-5">
+        <div>
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Navigation
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 md:grid-cols-3 lg:col-span-3">
+                     <a href="Navbars - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/navigation-navbars.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Navbars</span>
+                                  </p>
+                <p class="text-sm text-gray-500">10 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Pagination - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/navigation-pagination.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Pagination</span>
+                                  </p>
+                <p class="text-sm text-gray-500">3 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Tabs - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/navigation-tabs.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Tabs</span>
+                                  </p>
+                <p class="text-sm text-gray-500">6 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Vertical Navigation - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/navigation-vertical-navigation.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Vertical Navigation</span>
+                                  </p>
+                <p class="text-sm text-gray-500">6 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Sidebar Navigation - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/navigation-sidebar-navigation.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Sidebar Navigation</span>
+                                  </p>
+                <p class="text-sm text-gray-500">8 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Breadcrumbs - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/navigation-breadcrumbs.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Breadcrumbs</span>
+                                  </p>
+                <p class="text-sm text-gray-500">4 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Steps - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/navigation-steps.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Steps</span>
+                                  </p>
+                <p class="text-sm text-gray-500">7 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                   </div>
+      </div>
+            <div id="product-application-ui-overlays" class="border-t border-gray-200 pt-8 grid grid-cols-1 gap-y-6 lg:grid-cols-4 lg:gap-5">
+        <div>
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Overlays
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 md:grid-cols-3 lg:col-span-3">
+                     <a href="/Modals - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/overlays-modals.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Modals</span>
+                                  </p>
+                <p class="text-sm text-gray-500">6 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Slide-overs - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/overlays-slide-overs.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Slide-overs</span>
+                                  </p>
+                <p class="text-sm text-gray-500">11 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Notifications - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/overlays-notifications.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Notifications</span>
+                                  </p>
+                <p class="text-sm text-gray-500">6 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                   </div>
+      </div>
+            <div id="product-application-ui-elements" class="border-t border-gray-200 pt-8 grid grid-cols-1 gap-y-6 lg:grid-cols-4 lg:gap-5">
+        <div>
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Elements
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 md:grid-cols-3 lg:col-span-3">
+                     <a href="/Avatars - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/elements-avatars.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Avatars</span>
+                                  </p>
+                <p class="text-sm text-gray-500">11 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Dropdowns - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/elements-dropdowns.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Dropdowns</span>
+                                  </p>
+                <p class="text-sm text-gray-500">5 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Badges - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/elements-badges.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Badges</span>
+                                  </p>
+                <p class="text-sm text-gray-500">7 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Buttons - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/elements-buttons.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Buttons</span>
+                                  </p>
+                <p class="text-sm text-gray-500">7 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Button Groups - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/elements-button-groups.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Button Groups</span>
+                                  </p>
+                <p class="text-sm text-gray-500">5 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                   </div>
+      </div>
+            <div id="product-application-ui-layout" class="border-t border-gray-200 pt-8 grid grid-cols-1 gap-y-6 lg:grid-cols-4 lg:gap-5">
+        <div>
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Layout
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 md:grid-cols-3 lg:col-span-3">
+                     <a href="Containers - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/layout-containers.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Containers</span>
+                                  </p>
+                <p class="text-sm text-gray-500">4 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Panels - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/layout-panels.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Panels</span>
+                                  </p>
+                <p class="text-sm text-gray-500">10 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/List containers - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/layout-list-containers.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> List containers</span>
+                                    <span class="inline ml-2 bg-yellow-100 rounded-full px-2 py-0.5 text-xs tracking-wide uppercase font-semibold flex-shrink-0">
+                    <span class="text-yellow-700">New</span>
+                  </span>
+                                  </p>
+                <p class="text-sm text-gray-500">7 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Media Objects - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/layout-media-objects.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Media Objects</span>
+                                  </p>
+                <p class="text-sm text-gray-500">8 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Dividers - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/layout-dividers.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Dividers</span>
+                                    <span class="inline ml-2 bg-yellow-100 rounded-full px-2 py-0.5 text-xs tracking-wide uppercase font-semibold flex-shrink-0">
+                    <span class="text-yellow-700">New</span>
+                  </span>
+                                  </p>
+                <p class="text-sm text-gray-500">8 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <figure class="opacity-50">
+            <div class="relative rounded overflow-hidden">
+              <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/layout-grids.svg" alt="">
+              <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 border-2 border-dashed opacity-25"></div>
+            </div>
+            <figcaption class="mt-3">
+              <p class="text-sm font-medium text-gray-900">
+                Grids
+              </p>
+              <p class="text-sm text-gray-500">
+                Coming soon
+              </p>
+            </figcaption>
+          </figure>
+                   </div>
+      </div>
+            <div id="product-application-ui-page-examples" class="border-t border-gray-200 pt-8 grid grid-cols-1 gap-y-6 lg:grid-cols-4 lg:gap-5">
+        <div>
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Page Examples
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-6 md:grid-cols-3 lg:col-span-3">
+                     <a href="/Home Screens - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/page-examples-home-screens.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Home Screens</span>
+                                    <span class="inline ml-2 bg-yellow-100 rounded-full px-2 py-0.5 text-xs tracking-wide uppercase font-semibold flex-shrink-0">
+                    <span class="text-yellow-700">New</span>
+                  </span>
+                                  </p>
+                <p class="text-sm text-gray-500">4 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Detail Screens - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/page-examples-detail-screens.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Detail Screens</span>
+                                  </p>
+                <p class="text-sm text-gray-500">3 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                      <a href="/Settings Screens - Official Tailwind CSS UI Components.html" class="block group ">
+            <figure>
+              <div class="relative rounded overflow-hidden transition transform duration-150 ease-in-out">
+                <img class="w-full h-auto" src="./Tailwind UI - Official Tailwind CSS Components_files/page-examples-settings-screens.svg" alt="">
+                <div class="absolute inset-0 flex items-center justify-center text-center rounded-md border-gray-900 opacity-15 border"></div>
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
+              </div>
+              <figcaption class="mt-3">
+                <p class="flex items-baseline text-sm font-medium text-gray-900">
+                  <span> Settings Screens</span>
+                                  </p>
+                <p class="text-sm text-gray-500">4 components</p>
+              </figcaption>
+            </figure>
+          </a>
+                   </div>
+      </div>
+          </div>
+  </div>
+  
+  
+
+  </div>
+</main>
+
+
+ <script>
+  function CommandPalette(items, options) {
+    const fuse = new Fuse(items, { threshold: 0.3, keys: ['name', 'category'] })
+    return {
+      isOpen: false,
+      open() {
+        if (this.isOpen) {
+          return
+        }
+        this.search = ''
+        this.isOpen = true
+        setTimeout(() => {
+          this.$refs.search.focus()
+        }, 100)
+      },
+      search: '',
+      filteredItems() {
+        return fuse.search(this.search).map((item, i) => [item, i])
+      },
+      selectUp() {
+        this.selected = Math.max(0, this.selected - 1)
+        this.$nextTick(() => {
+          this.$refs.results.children[this.selected + 1].scrollIntoView({
+            block: 'nearest',
+          })
+        })
+      },
+      selectDown() {
+        this.selected = Math.min(this.filteredItems().length - 1, this.selected + 1)
+        this.$nextTick(() => {
+          this.$refs.results.children[this.selected + 1].scrollIntoView({
+            block: 'nearest',
+          })
+        })
+      },
+      go() {
+        window.location = options.versionPrefix + this.filteredItems()[this.selected][0].item.url
+      },
+      selected: 0,
+    }
+  }
+</script>
+<div style="display: none;" x-data="CommandPalette([{&quot;url&quot;:&quot;\/components\/application-ui\/application-shells\/stacked&quot;,&quot;name&quot;:&quot;Stacked Layouts&quot;,&quot;category&quot;:&quot;Application UI \/ Application Shells&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/application-shells\/sidebar&quot;,&quot;name&quot;:&quot;Sidebar Layouts&quot;,&quot;category&quot;:&quot;Application UI \/ Application Shells&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/application-shells\/multi-column&quot;,&quot;name&quot;:&quot;Multi-Column Layouts&quot;,&quot;category&quot;:&quot;Application UI \/ Application Shells&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/headings\/page-headings&quot;,&quot;name&quot;:&quot;Page Headings&quot;,&quot;category&quot;:&quot;Application UI \/ Headings&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/headings\/card-headings&quot;,&quot;name&quot;:&quot;Card Headings&quot;,&quot;category&quot;:&quot;Application UI \/ Headings&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/headings\/section-headings&quot;,&quot;name&quot;:&quot;Section Headings&quot;,&quot;category&quot;:&quot;Application UI \/ Headings&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/data-display\/description-lists&quot;,&quot;name&quot;:&quot;Description Lists&quot;,&quot;category&quot;:&quot;Application UI \/ Data Display&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/data-display\/stats&quot;,&quot;name&quot;:&quot;Stats&quot;,&quot;category&quot;:&quot;Application UI \/ Data Display&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/lists\/tables&quot;,&quot;name&quot;:&quot;Tables&quot;,&quot;category&quot;:&quot;Application UI \/ Lists&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/lists\/stacked-lists&quot;,&quot;name&quot;:&quot;Stacked Lists&quot;,&quot;category&quot;:&quot;Application UI \/ Lists&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/lists\/grid-lists&quot;,&quot;name&quot;:&quot;Grid Lists&quot;,&quot;category&quot;:&quot;Application UI \/ Lists&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/lists\/feeds&quot;,&quot;name&quot;:&quot;Feeds&quot;,&quot;category&quot;:&quot;Application UI \/ Lists&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/forms\/form-layouts&quot;,&quot;name&quot;:&quot;Form Layouts&quot;,&quot;category&quot;:&quot;Application UI \/ Forms&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/forms\/input-groups&quot;,&quot;name&quot;:&quot;Input Groups&quot;,&quot;category&quot;:&quot;Application UI \/ Forms&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/forms\/select-menus&quot;,&quot;name&quot;:&quot;Select Menus&quot;,&quot;category&quot;:&quot;Application UI \/ Forms&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/forms\/radio-groups&quot;,&quot;name&quot;:&quot;Radio Groups&quot;,&quot;category&quot;:&quot;Application UI \/ Forms&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/forms\/toggles&quot;,&quot;name&quot;:&quot;Toggles&quot;,&quot;category&quot;:&quot;Application UI \/ Forms&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/forms\/sign-in-forms&quot;,&quot;name&quot;:&quot;Sign-in and Registration&quot;,&quot;category&quot;:&quot;Application UI \/ Forms&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/forms\/action-panels&quot;,&quot;name&quot;:&quot;Action Panels&quot;,&quot;category&quot;:&quot;Application UI \/ Forms&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/feedback\/alerts&quot;,&quot;name&quot;:&quot;Alerts&quot;,&quot;category&quot;:&quot;Application UI \/ Feedback&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/navigation\/tabs&quot;,&quot;name&quot;:&quot;Tabs&quot;,&quot;category&quot;:&quot;Application UI \/ Navigation&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/navigation\/navbars&quot;,&quot;name&quot;:&quot;Navbars&quot;,&quot;category&quot;:&quot;Application UI \/ Navigation&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/navigation\/vertical-navigation&quot;,&quot;name&quot;:&quot;Vertical Navigation&quot;,&quot;category&quot;:&quot;Application UI \/ Navigation&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/navigation\/pagination&quot;,&quot;name&quot;:&quot;Pagination&quot;,&quot;category&quot;:&quot;Application UI \/ Navigation&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/navigation\/sidebar-navigation&quot;,&quot;name&quot;:&quot;Sidebar Navigation&quot;,&quot;category&quot;:&quot;Application UI \/ Navigation&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/navigation\/breadcrumbs&quot;,&quot;name&quot;:&quot;Breadcrumbs&quot;,&quot;category&quot;:&quot;Application UI \/ Navigation&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/navigation\/steps&quot;,&quot;name&quot;:&quot;Steps&quot;,&quot;category&quot;:&quot;Application UI \/ Navigation&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/overlays\/modals&quot;,&quot;name&quot;:&quot;Modals&quot;,&quot;category&quot;:&quot;Application UI \/ Overlays&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/overlays\/slide-overs&quot;,&quot;name&quot;:&quot;Slide-overs&quot;,&quot;category&quot;:&quot;Application UI \/ Overlays&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/overlays\/notifications&quot;,&quot;name&quot;:&quot;Notifications&quot;,&quot;category&quot;:&quot;Application UI \/ Overlays&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/elements\/avatars&quot;,&quot;name&quot;:&quot;Avatars&quot;,&quot;category&quot;:&quot;Application UI \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/elements\/badges&quot;,&quot;name&quot;:&quot;Badges&quot;,&quot;category&quot;:&quot;Application UI \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/elements\/buttons&quot;,&quot;name&quot;:&quot;Buttons&quot;,&quot;category&quot;:&quot;Application UI \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/elements\/button-groups&quot;,&quot;name&quot;:&quot;Button Groups&quot;,&quot;category&quot;:&quot;Application UI \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/elements\/dropdowns&quot;,&quot;name&quot;:&quot;Dropdowns&quot;,&quot;category&quot;:&quot;Application UI \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/layout\/containers&quot;,&quot;name&quot;:&quot;Containers&quot;,&quot;category&quot;:&quot;Application UI \/ Layout&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/layout\/panels&quot;,&quot;name&quot;:&quot;Panels&quot;,&quot;category&quot;:&quot;Application UI \/ Layout&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/layout\/list-containers&quot;,&quot;name&quot;:&quot;List containers&quot;,&quot;category&quot;:&quot;Application UI \/ Layout&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/layout\/media-objects&quot;,&quot;name&quot;:&quot;Media Objects&quot;,&quot;category&quot;:&quot;Application UI \/ Layout&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/layout\/dividers&quot;,&quot;name&quot;:&quot;Dividers&quot;,&quot;category&quot;:&quot;Application UI \/ Layout&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/page-examples\/home-screens&quot;,&quot;name&quot;:&quot;Home Screens&quot;,&quot;category&quot;:&quot;Application UI \/ Page Examples&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/page-examples\/detail-screens&quot;,&quot;name&quot;:&quot;Detail Screens&quot;,&quot;category&quot;:&quot;Application UI \/ Page Examples&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/page-examples\/settings-screens&quot;,&quot;name&quot;:&quot;Settings Screens&quot;,&quot;category&quot;:&quot;Application UI \/ Page Examples&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/heroes&quot;,&quot;name&quot;:&quot;Hero Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/feature-sections&quot;,&quot;name&quot;:&quot;Feature Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/cta-sections&quot;,&quot;name&quot;:&quot;CTA Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/pricing&quot;,&quot;name&quot;:&quot;Pricing Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/header&quot;,&quot;name&quot;:&quot;Header Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/faq-sections&quot;,&quot;name&quot;:&quot;FAQs&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/newsletter-sections&quot;,&quot;name&quot;:&quot;Newsletter Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/stats-sections&quot;,&quot;name&quot;:&quot;Stats&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/testimonials&quot;,&quot;name&quot;:&quot;Testimonials&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/blog-sections&quot;,&quot;name&quot;:&quot;Blog Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/contact-sections&quot;,&quot;name&quot;:&quot;Contact Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/team-sections&quot;,&quot;name&quot;:&quot;Team Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/content-sections&quot;,&quot;name&quot;:&quot;Content Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/footers&quot;,&quot;name&quot;:&quot;Footers&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/logo-clouds&quot;,&quot;name&quot;:&quot;Logo Clouds&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/elements\/headers&quot;,&quot;name&quot;:&quot;Headers&quot;,&quot;category&quot;:&quot;Marketing \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/elements\/flyout-menus&quot;,&quot;name&quot;:&quot;Flyout Menus&quot;,&quot;category&quot;:&quot;Marketing \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/elements\/banners&quot;,&quot;name&quot;:&quot;Banners&quot;,&quot;category&quot;:&quot;Marketing \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/page-examples\/pricing-pages&quot;,&quot;name&quot;:&quot;Pricing Pages&quot;,&quot;category&quot;:&quot;Marketing \/ Page Examples&quot;}], { versionPrefix: &#39;&#39; })" x-init="$watch(&#39;search&#39;, value =&gt; { if (value.length === 0) selected = 0 })" x-show="isOpen" @keydown.window.prevent.cmd.k="open()" @keydown.window.prevent.ctrl.k="open()" @keydown.window.prevent.slash="open()" @keydown.window.escape="isOpen = false" class="fixed z-50 px-4 pt-16 flex items-start justify-center inset-0 sm:pt-24">
+  <div x-show="isOpen" x-transition:enter="ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 transition-opacity" style="display: none;">
+    <div class="absolute inset-0 bg-gray-900 opacity-50"></div>
+  </div>
+
+  <div @click.away="isOpen = false" x-show="isOpen" x-transition:enter="ease-out duration-200" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="ease-in duration-150" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" class="relative bg-gray-900 rounded-lg overflow-hidden shadow-xl transform transition-all max-w-lg w-full" style="display: none;">
+    <input @keydown.tab.prevent="" @keydown.prevent.stop.enter="go()" @keydown.prevent.arrow-up="selectUp()" @keydown.prevent.arrow-down="selectDown()" x-ref="search" x-model="search" type="text" style="caret-color: #6b7280" class="appearance-none w-full bg-transparent px-6 py-4 text-gray-300 text-lg placeholder-gray-500 focus:outline-none" placeholder="Find anything...">
+    <div class="border-t border-gray-800" x-show="filteredItems().length &gt; 0" style="display: none;">
+      <ul x-ref="results" style="max-height: 265px;" class="overflow-y-auto">
+        <template hidden="" x-for="([{ item: { name, url, category }}, i]) in filteredItems()" :key="url"></template>
+      </ul>
+    </div>
+  </div>
+</div>
+ 
+
+    <script src="./Tailwind UI - Official Tailwind CSS Components_files/fuse.min.js.download"></script>
+    <script src="./Tailwind UI - Official Tailwind CSS Components_files/app.js.download"></script>
+    <script>
+  ;(function() {
+    try {
+      if (window.localStorage) {
+        const utmSource = new URLSearchParams(window.location.search).get('utm_source')
+        const utmMedium = new URLSearchParams(window.location.search).get('utm_medium')
+
+        window.localStorage.setItem('utm', JSON.stringify({ source: utmSource, medium: utmMedium }))
+      }
+    } catch (e) {}
+  })()
+</script>
+  
+
+</body></html>

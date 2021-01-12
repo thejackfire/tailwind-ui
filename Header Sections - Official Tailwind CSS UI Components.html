@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://tailwindui.com/components/marketing/sections/header -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@tailwindcss">
+    <meta name="twitter:title" content="Tailwind UI">
+    <meta name="twitter:description" content="Header section examples for Tailwind CSS, designed and built by the creators of the framework.">
+    <meta name="twitter:image" content="https://tailwindui.com/img/twitter-card.png">
+    <meta name="twitter:creator" content="@tailwindcss">
+    <meta property="og:url" content="https://www.tailwindui.com/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Tailwind UI">
+    <meta property="og:description" content="Header section examples for Tailwind CSS, designed and built by the creators of the framework.">
+    <meta property="og:image" content="https://tailwindui.com/img/twitter-card.png">
+    <meta property="description" content="Header section examples for Tailwind CSS, designed and built by the creators of the framework.">
+    <meta name="csrf-token" content="WKk5ocxP6XkONe5XS3q9cNzzDOLPEJI9mVPOBuDZ">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://tailwindui.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://tailwindui.com/favicon-16x16.png">
+    <link rel="stylesheet" href="./Header Sections - Official Tailwind CSS UI Components_files/inter.css">
+    <link rel="stylesheet" href="./Header Sections - Official Tailwind CSS UI Components_files/app.css">
+    <title>Header Sections - Official Tailwind CSS UI Components</title>
+    <script src="./Header Sections - Official Tailwind CSS UI Components_files/script.js.download" site="SOXJJCZQ" defer=""></script>
+      <script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script></head>
+  <body class="font-sans antialiased text-gray-900 " cz-shortcut-listen="true">
+    <header class="relative z-10 border-b border-gray-200 bg-white">
+  <div class="flex items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+    <div class="md:flex items-center">
+      <a href="https://tailwindui.com/components" class="block">
+        <img class="h-6 w-auto" src="./Header Sections - Official Tailwind CSS UI Components_files/tailwindui-logo.svg" alt="Tailwind UI">
+      </a>
+      <p class="hidden md:block mt-2 ml-3 text-sm text-gray-500 md:mt-0">
+                <span>
+          <span class="bg-pink-100 px-2 py-1 rounded text-pink-900 font-medium">Now updated for Tailwind CSS v2.0!</span>
+          <a href="https://tailwindui.com/changes-for-v2" class="ml-2 font-medium text-gray-500 hover:text-gray-900">Learn more →</a>
+        </span>
+              </p>
+    </div>
+
+        <div class="flex text-sm">
+      <a href="https://tailwindui.com/components" class="hidden lg:inline font-medium text-gray-500 hover:text-gray-900">
+        Components
+      </a>
+      <a href="https://tailwindui.com/documentation" class="hidden lg:inline ml-12 font-medium text-gray-500 hover:text-gray-900">
+        Documentation
+      </a>
+      <div x-data="{ open: false }" @keydown.escape="open = false" @click.away="open = false" class="ml-12 relative">
+        <div>
+          <button @click="open = !open" class="flex items-center text-gray-400 hover:text-gray-600">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+            </svg>
+          </button>
+        </div>
+        <div x-show="open" style="display: none;" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="origin-top-right absolute right-0 mt-2 w-56 min-w-max rounded-md shadow-lg">
+          <div class="rounded-md bg-white shadow-xs">
+            <div class="px-4 py-3">
+              <p class="text-sm">Signed in as</p>
+              <p class="text-sm font-medium text-gray-900">shoaib@actonate.com</p>
+            </div>
+            <div class="border-t border-gray-100"></div>
+            <div class="py-1">
+              <a href="https://tailwindui.com/components" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 lg:hidden">Components</a>
+              <a href="https://tailwindui.com/documentation" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 lg:hidden">Documentation</a>
+              <a href="https://tailwindui.com/changelog" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Changelog</a>
+              <a href="https://tailwindui.com/support" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Support</a>
+              <a href="https://tailwindui.com/license" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">License</a>
+            </div>
+            <div class="border-t border-gray-100"></div>
+
+                                        <div class="py-1">
+                <a href="https://tailwindui.com/v1/components" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Switch to v1</a>
+              </div>
+                          
+            <div class="border-t border-gray-100"></div>
+            <div class="py-1">
+              <a href="https://tailwindui.com/account-settings" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Account settings</a>
+              <form method="POST" action="https://tailwindui.com/logout">
+                <input type="hidden" name="_token" value="WKk5ocxP6XkONe5XS3q9cNzzDOLPEJI9mVPOBuDZ">                <button type="submit" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                  Sign out
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+  <div class="md:hidden mt-1 px-4 pb-4 sm:px-6 lg:px-8">
+    <p class="text-sm text-gray-500 md:mt-0">
+            <span>
+        <span class="bg-pink-100 px-2 py-1 rounded text-pink-900 font-medium">Now updated for Tailwind CSS v2.0!</span>
+        <a href="https://tailwindui.com/changes-for-v2" class="ml-2 font-medium text-gray-500 hover:text-gray-900">Learn more →</a>
+      </span>
+          </p>
+  </div>
+</header>
+<main>
+  
+
+
+<div class="py-4 sm:py-12">
+  <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="pb-2">
+      <nav class="flex items-center text-sm font-medium">
+        <a href="https://tailwindui.com/components#product-marketing" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:underline transition duration-150 ease-in-out">
+          Marketing
+        </a>
+        <svg class="flex-shrink-0 mx-2 h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+        </svg>
+        <a href="https://tailwindui.com/components#product-marketing-sections" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:underline transition duration-150 ease-in-out">
+          Page Sections
+        </a>
+      </nav>
+    </div>
+    <h2 class="text-2xl font-semibold font-display text-gray-900 sm:text-3xl">
+      Header Sections
+    </h2>
+  </div>
+  <div class="mt-6 bg-white max-w-8xl mx-auto sm:px-6 lg:px-8">
+    <div class="max-w-8xl mx-auto">
+             <div id="component-2c3b25e7b9e4490edd7b6950692c0a11" x-data="{ activeTab: &#39;preview&#39;, languages: [&quot;html&quot;], activeSnippet: &#39;html&#39; }" class="border-b border-t border-gray-200 sm:border sm:rounded-lg overflow-hidden" x-init="function() {
+    let active = localStorage.getItem(&#39;activeSnippet&#39;)
+
+    // Check if component works with the active language
+    if (languages.includes(active)) {
+      activeSnippet = active
+    }
+
+    // Keep this component up to date with localStorage
+    // Ideally we use the `window.addEventListener(&#39;storage&#39;, ...)`, however this
+    // callback does not fire when you change localStorage from the current page.
+
+    window.componentListeners = window.componentListeners || [];
+    function update() {
+      let next = localStorage.getItem(&#39;activeSnippet&#39;)
+      if (next !== activeSnippet &amp;&amp; languages.includes(next)) {
+        activeSnippet = next
+      }
+    }
+    window.componentListeners.push(update)
+
+    // Keep localStorage up to date
+    $watch(&#39;activeSnippet&#39;, value =&gt; {
+      localStorage.setItem(&#39;activeSnippet&#39;, value)
+      window.componentListeners.forEach(listener =&gt; {
+        if (listener === update) return // Skip the current one, to prevent infinite loops
+        listener()
+      })
+    })
+  }">
+  <div class="px-4 py-2 border-b border-gray-200 flex justify-between items-center bg-white sm:py-4 sm:px-6 sm:items-baseline">
+    <div class="flex-shrink min-w-0 flex items-center">
+      <h3 class="flex-shrink min-w-0 font-regular text-base md:text-lg leading-snug truncate">
+        <a href="https://tailwindui.com/components/marketing/sections/header#component-2c3b25e7b9e4490edd7b6950692c0a11">Simple centered</a>
+      </h3>
+           </div>
+    <div class="ml-4 flex flex-shrink-0 items-center">
+      <div class="flex items-center text-sm sm:hidden">
+        <button type="button" @click="activeTab === &#39;preview&#39; ? (activeTab = &#39;code&#39;) : (activeTab = &#39;preview&#39;)" :class="{&#39;bg-indigo-50 text-indigo-700&#39;: activeTab === &#39;code&#39;, &#39;text-gray-400 hover:text-gray-600 focus:text-gray-600&#39;: activeTab !== &#39;code&#39;}" class="inline-block rounded-lg font-medium leading-none py-3 px-3 focus:outline-none text-gray-400 hover:text-gray-600 focus:text-gray-600">
+          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden sm:flex items-center text-sm md:text-base">
+        <button type="button" @click="activeTab = &#39;preview&#39;" :class="{&#39;bg-indigo-50 text-indigo-700&#39;: activeTab === &#39;preview&#39;, &#39;text-gray-500 hover:text-indigo-600 focus:text-indigo-600&#39;: activeTab !== &#39;preview&#39;}" class="inline-block rounded-lg font-medium leading-none py-2 px-3 focus:outline-none bg-indigo-50 text-indigo-700">
+          Preview
+        </button>
+        <button type="button" @click="activeTab = &#39;code&#39;" :class="{&#39;bg-indigo-50 text-indigo-700&#39;: activeTab === &#39;code&#39;, &#39;text-gray-500 hover:text-indigo-600 focus:text-indigo-600&#39;: activeTab !== &#39;code&#39;}" class="ml-2 inline-block rounded-lg font-medium leading-none py-2 px-3 focus:outline-none text-gray-500 hover:text-indigo-600 focus:text-indigo-600">
+          Code
+        </button>
+                <textarea readonly="" class="sr-only whitespace-pre-wrap" aria-hidden="" x-ref="htmlClipboardCode" tabindex="-1">&lt;!-- This example requires Tailwind CSS v2.0+ --&gt;
+&lt;div class="bg-white"&gt;
+  &lt;div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8"&gt;
+    &lt;div class="text-center"&gt;
+      &lt;h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase"&gt;Pricing&lt;/h2&gt;
+      &lt;p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"&gt;Take control of your team.&lt;/p&gt;
+      &lt;p class="max-w-xl mt-5 mx-auto text-xl text-gray-500"&gt;Start building for free, then add a site plan to go live. Account plans unlock additional features.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</textarea>
+              </div>
+      <div class="hidden sm:flex sm:items-center">
+        <div class="pl-4 pr-4 self-stretch">
+          <div class="h-full border-l border-gray-200"></div>
+        </div>
+                <button type="button" @click="$refs[`${activeSnippet}ClipboardCode`].select(); document.execCommand(&#39;copy&#39;)" class="ml-3 text-gray-400 hover:text-gray-500">
+          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+            <title>Copy</title>
+            <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+            <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="relative bg-gray-500">
+    <div :class="{ &#39;block&#39;: activeTab === &#39;preview&#39;, &#39;hidden&#39;: activeTab !== &#39;preview&#39; }" class="block">
+      <div x-data="resizableIFrame()" x-init="init()" x-ref="root" :style="&#39;max-width: 100%; width: &#39; + width" class="sm:min-w-preview-mobile relative sm:pr-4" style="max-width: 100%; width: 100%">
+        <iframe x-ref="iframe" class="w-full" id="iFrameResizer0" style="overflow: auto; height: 356px;" src="./Header Sections - Official Tailwind CSS UI Components_files/saved_resource.html"></iframe>
+        <div :class="{ &#39;pointer-events-none&#39;: !resizing }" class="absolute opacity-0 inset-0 pointer-events-none"></div>
+        <div x-ref="handle" class="sr-only sm:not-sr-only sm:border-l sm:bg-gray-100 sm:absolute sm:right-0 sm:inset-y-0 sm:flex sm:items-center sm:w-4">
+          <svg class="h-4 w-4 text-gray-600 pointer-events-none" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 5h2v14H8zM14 5h2v14h-2z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div :class="{ &#39;block&#39;: activeTab === &#39;code&#39;, &#39;hidden&#39;: activeTab !== &#39;code&#39; }" class="hidden">
+            <pre :class="{&#39;block&#39;: activeSnippet === &#39;html&#39;, &#39;hidden&#39;: activeSnippet !== &#39;html&#39; }" class=" block scrollbar-none m-0 p-0 overflow-auto text-white text-sm bg-gray-800 leading-normal language-html"><code class="inline-block p-4 scrolling-touch subpixel-antialiased language-html"><span class="token comment">&lt;!-- This example requires Tailwind CSS v2.0+ --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>bg-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text-center<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text-base font-semibold text-indigo-600 tracking-wide uppercase<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Pricing<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Take control of your team.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>max-w-xl mt-5 mx-auto text-xl text-gray-500<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Start building for free, then add a site plan to go live. Account plans unlock additional features.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+          </div>
+  </div>
+</div>
+ 
+             <div id="component-89bb1d244fc65729fdeeec97fb00a404" x-data="{ activeTab: &#39;preview&#39;, languages: [&quot;html&quot;], activeSnippet: &#39;html&#39; }" class="border-b border-t border-gray-200 sm:border sm:rounded-lg overflow-hidden mt-16" x-init="function() {
+    let active = localStorage.getItem(&#39;activeSnippet&#39;)
+
+    // Check if component works with the active language
+    if (languages.includes(active)) {
+      activeSnippet = active
+    }
+
+    // Keep this component up to date with localStorage
+    // Ideally we use the `window.addEventListener(&#39;storage&#39;, ...)`, however this
+    // callback does not fire when you change localStorage from the current page.
+
+    window.componentListeners = window.componentListeners || [];
+    function update() {
+      let next = localStorage.getItem(&#39;activeSnippet&#39;)
+      if (next !== activeSnippet &amp;&amp; languages.includes(next)) {
+        activeSnippet = next
+      }
+    }
+    window.componentListeners.push(update)
+
+    // Keep localStorage up to date
+    $watch(&#39;activeSnippet&#39;, value =&gt; {
+      localStorage.setItem(&#39;activeSnippet&#39;, value)
+      window.componentListeners.forEach(listener =&gt; {
+        if (listener === update) return // Skip the current one, to prevent infinite loops
+        listener()
+      })
+    })
+  }">
+  <div class="px-4 py-2 border-b border-gray-200 flex justify-between items-center bg-white sm:py-4 sm:px-6 sm:items-baseline">
+    <div class="flex-shrink min-w-0 flex items-center">
+      <h3 class="flex-shrink min-w-0 font-regular text-base md:text-lg leading-snug truncate">
+        <a href="https://tailwindui.com/components/marketing/sections/header#component-89bb1d244fc65729fdeeec97fb00a404">Simple with select menu dark</a>
+      </h3>
+           </div>
+    <div class="ml-4 flex flex-shrink-0 items-center">
+      <div class="flex items-center text-sm sm:hidden">
+        <button type="button" @click="activeTab === &#39;preview&#39; ? (activeTab = &#39;code&#39;) : (activeTab = &#39;preview&#39;)" :class="{&#39;bg-indigo-50 text-indigo-700&#39;: activeTab === &#39;code&#39;, &#39;text-gray-400 hover:text-gray-600 focus:text-gray-600&#39;: activeTab !== &#39;code&#39;}" class="inline-block rounded-lg font-medium leading-none py-3 px-3 focus:outline-none text-gray-400 hover:text-gray-600 focus:text-gray-600">
+          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden sm:flex items-center text-sm md:text-base">
+        <button type="button" @click="activeTab = &#39;preview&#39;" :class="{&#39;bg-indigo-50 text-indigo-700&#39;: activeTab === &#39;preview&#39;, &#39;text-gray-500 hover:text-indigo-600 focus:text-indigo-600&#39;: activeTab !== &#39;preview&#39;}" class="inline-block rounded-lg font-medium leading-none py-2 px-3 focus:outline-none bg-indigo-50 text-indigo-700">
+          Preview
+        </button>
+        <button type="button" @click="activeTab = &#39;code&#39;" :class="{&#39;bg-indigo-50 text-indigo-700&#39;: activeTab === &#39;code&#39;, &#39;text-gray-500 hover:text-indigo-600 focus:text-indigo-600&#39;: activeTab !== &#39;code&#39;}" class="ml-2 inline-block rounded-lg font-medium leading-none py-2 px-3 focus:outline-none text-gray-500 hover:text-indigo-600 focus:text-indigo-600">
+          Code
+        </button>
+                <textarea readonly="" class="sr-only whitespace-pre-wrap" aria-hidden="" x-ref="htmlClipboardCode" tabindex="-1">&lt;!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ]
+  }
+  ```
+--&gt;
+&lt;div class="bg-gray-800"&gt;
+  &lt;div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between"&gt;
+    &lt;div class="max-w-xl"&gt;
+      &lt;h2 class="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl"&gt;Pricing Plans&lt;/h2&gt;
+      &lt;p class="mt-5 text-xl text-gray-400"&gt;Start building for free, then add a site plan to go live. Account plans unlock additional features.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="mt-10 w-full max-w-xs"&gt;
+      &lt;label for="currency" class="block text-base font-medium text-gray-300"&gt;Currency&lt;/label&gt;
+      &lt;div class="mt-1.5 relative"&gt;
+        &lt;select id="currency" name="currency" class="appearance-none block w-full bg-none bg-gray-700 border border-transparent rounded-md pl-3 pr-10 py-2 text-base text-white focus:outline-none focus:ring-1 focus:ring-white focus:border-white sm:text-sm"&gt;
+          &lt;option&gt;Argentina (ARS)&lt;/option&gt;
+          &lt;option&gt;Australia (AUD)&lt;/option&gt;
+          &lt;option selected&gt;United States (USD)&lt;/option&gt;
+          &lt;option&gt;Canada (CAD)&lt;/option&gt;
+          &lt;option&gt;France (EUR)&lt;/option&gt;
+          &lt;option&gt;Japan (JPY)&lt;/option&gt;
+          &lt;option&gt;Nigeria (NGN)&lt;/option&gt;
+          &lt;option&gt;Switzerland (CHF)&lt;/option&gt;
+          &lt;option&gt;United Kingdom (GBP)&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;div class="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center"&gt;
+          &lt;!-- Heroicon name: chevron-down --&gt;
+          &lt;svg class="h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"&gt;
+            &lt;path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</textarea>
+              </div>
+      <div class="hidden sm:flex sm:items-center">
+        <div class="pl-4 pr-4 self-stretch">
+          <div class="h-full border-l border-gray-200"></div>
+        </div>
+                <button type="button" @click="$refs[`${activeSnippet}ClipboardCode`].select(); document.execCommand(&#39;copy&#39;)" class="ml-3 text-gray-400 hover:text-gray-500">
+          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+            <title>Copy</title>
+            <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+            <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="relative bg-gray-500">
+    <div :class="{ &#39;block&#39;: activeTab === &#39;preview&#39;, &#39;hidden&#39;: activeTab !== &#39;preview&#39; }" class="block">
+      <div x-data="resizableIFrame()" x-init="init()" x-ref="root" :style="&#39;max-width: 100%; width: &#39; + width" class="sm:min-w-preview-mobile relative sm:pr-4" style="max-width: 100%; width: 100%">
+        <iframe x-ref="iframe" class="w-full" id="iFrameResizer1" style="overflow: auto; height: 328px;" src="./Header Sections - Official Tailwind CSS UI Components_files/saved_resource(1).html"></iframe>
+        <div :class="{ &#39;pointer-events-none&#39;: !resizing }" class="absolute opacity-0 inset-0 pointer-events-none"></div>
+        <div x-ref="handle" class="sr-only sm:not-sr-only sm:border-l sm:bg-gray-100 sm:absolute sm:right-0 sm:inset-y-0 sm:flex sm:items-center sm:w-4">
+          <svg class="h-4 w-4 text-gray-600 pointer-events-none" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 5h2v14H8zM14 5h2v14h-2z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div :class="{ &#39;block&#39;: activeTab === &#39;code&#39;, &#39;hidden&#39;: activeTab !== &#39;code&#39; }" class="hidden">
+            <pre :class="{&#39;block&#39;: activeSnippet === &#39;html&#39;, &#39;hidden&#39;: activeSnippet !== &#39;html&#39; }" class=" block scrollbar-none m-0 p-0 overflow-auto text-white text-sm bg-gray-800 leading-normal language-html"><code class="inline-block p-4 scrolling-touch subpixel-antialiased language-html"><span class="token comment">&lt;!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ]
+  }
+  ```
+--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>bg-gray-800<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>max-w-xl<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Pricing Plans<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-5 text-xl text-gray-400<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Start building for free, then add a site plan to go live. Account plans unlock additional features.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-10 w-full max-w-xs<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>currency<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>block text-base font-medium text-gray-300<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Currency<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-1.5 relative<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>currency<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>currency<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>appearance-none block w-full bg-none bg-gray-700 border border-transparent rounded-md pl-3 pr-10 py-2 text-base text-white focus:outline-none focus:ring-1 focus:ring-white focus:border-white sm:text-sm<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Argentina (ARS)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Australia (AUD)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">selected</span><span class="token punctuation">&gt;</span></span>United States (USD)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Canada (CAD)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>France (EUR)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Japan (JPY)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Nigeria (NGN)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Switzerland (CHF)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>United Kingdom (GBP)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token comment">&lt;!-- Heroicon name: chevron-down --&gt;</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>h-4 w-4 text-white<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0 0 20 20<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">fill-rule</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>evenodd<span class="token punctuation">"</span></span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z<span class="token punctuation">"</span></span> <span class="token attr-name">clip-rule</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>evenodd<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+          </div>
+  </div>
+</div>
+ 
+             <div id="component-4a7d4e3bae3742e75cde89fd1656877b" x-data="{ activeTab: &#39;preview&#39;, languages: [&quot;html&quot;], activeSnippet: &#39;html&#39; }" class="border-b border-t border-gray-200 sm:border sm:rounded-lg overflow-hidden mt-16" x-init="function() {
+    let active = localStorage.getItem(&#39;activeSnippet&#39;)
+
+    // Check if component works with the active language
+    if (languages.includes(active)) {
+      activeSnippet = active
+    }
+
+    // Keep this component up to date with localStorage
+    // Ideally we use the `window.addEventListener(&#39;storage&#39;, ...)`, however this
+    // callback does not fire when you change localStorage from the current page.
+
+    window.componentListeners = window.componentListeners || [];
+    function update() {
+      let next = localStorage.getItem(&#39;activeSnippet&#39;)
+      if (next !== activeSnippet &amp;&amp; languages.includes(next)) {
+        activeSnippet = next
+      }
+    }
+    window.componentListeners.push(update)
+
+    // Keep localStorage up to date
+    $watch(&#39;activeSnippet&#39;, value =&gt; {
+      localStorage.setItem(&#39;activeSnippet&#39;, value)
+      window.componentListeners.forEach(listener =&gt; {
+        if (listener === update) return // Skip the current one, to prevent infinite loops
+        listener()
+      })
+    })
+  }">
+  <div class="px-4 py-2 border-b border-gray-200 flex justify-between items-center bg-white sm:py-4 sm:px-6 sm:items-baseline">
+    <div class="flex-shrink min-w-0 flex items-center">
+      <h3 class="flex-shrink min-w-0 font-regular text-base md:text-lg leading-snug truncate">
+        <a href="https://tailwindui.com/components/marketing/sections/header#component-4a7d4e3bae3742e75cde89fd1656877b">Simple with select menu</a>
+      </h3>
+           </div>
+    <div class="ml-4 flex flex-shrink-0 items-center">
+      <div class="flex items-center text-sm sm:hidden">
+        <button type="button" @click="activeTab === &#39;preview&#39; ? (activeTab = &#39;code&#39;) : (activeTab = &#39;preview&#39;)" :class="{&#39;bg-indigo-50 text-indigo-700&#39;: activeTab === &#39;code&#39;, &#39;text-gray-400 hover:text-gray-600 focus:text-gray-600&#39;: activeTab !== &#39;code&#39;}" class="inline-block rounded-lg font-medium leading-none py-3 px-3 focus:outline-none text-gray-400 hover:text-gray-600 focus:text-gray-600">
+          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden sm:flex items-center text-sm md:text-base">
+        <button type="button" @click="activeTab = &#39;preview&#39;" :class="{&#39;bg-indigo-50 text-indigo-700&#39;: activeTab === &#39;preview&#39;, &#39;text-gray-500 hover:text-indigo-600 focus:text-indigo-600&#39;: activeTab !== &#39;preview&#39;}" class="inline-block rounded-lg font-medium leading-none py-2 px-3 focus:outline-none bg-indigo-50 text-indigo-700">
+          Preview
+        </button>
+        <button type="button" @click="activeTab = &#39;code&#39;" :class="{&#39;bg-indigo-50 text-indigo-700&#39;: activeTab === &#39;code&#39;, &#39;text-gray-500 hover:text-indigo-600 focus:text-indigo-600&#39;: activeTab !== &#39;code&#39;}" class="ml-2 inline-block rounded-lg font-medium leading-none py-2 px-3 focus:outline-none text-gray-500 hover:text-indigo-600 focus:text-indigo-600">
+          Code
+        </button>
+                <textarea readonly="" class="sr-only whitespace-pre-wrap" aria-hidden="" x-ref="htmlClipboardCode" tabindex="-1">&lt;!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ]
+  }
+  ```
+--&gt;
+&lt;div class="bg-white"&gt;
+  &lt;div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between"&gt;
+    &lt;div class="max-w-xl"&gt;
+      &lt;h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"&gt;Pricing Plans&lt;/h2&gt;
+      &lt;p class="mt-5 text-xl text-gray-500"&gt;Start building for free, then add a site plan to go live. Account plans unlock additional features.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="mt-10 w-full max-w-xs"&gt;
+      &lt;label for="currency" class="block text-base font-medium text-gray-500"&gt;Currency&lt;/label&gt;
+      &lt;div class="mt-1.5 relative"&gt;
+        &lt;select id="currency" name="currency" class="appearance-none block w-full bg-none bg-white border border-gray-300 rounded-md pl-3 pr-10 py-2 text-base text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"&gt;
+          &lt;option&gt;Argentina (ARS)&lt;/option&gt;
+          &lt;option&gt;Australia (AUD)&lt;/option&gt;
+          &lt;option selected&gt;United States (USD)&lt;/option&gt;
+          &lt;option&gt;Canada (CAD)&lt;/option&gt;
+          &lt;option&gt;France (EUR)&lt;/option&gt;
+          &lt;option&gt;Japan (JPY)&lt;/option&gt;
+          &lt;option&gt;Nigeria (NGN)&lt;/option&gt;
+          &lt;option&gt;Switzerland (CHF)&lt;/option&gt;
+          &lt;option&gt;United Kingdom (GBP)&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;div class="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center"&gt;
+          &lt;!-- Heroicon name: chevron-down --&gt;
+          &lt;svg class="h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"&gt;
+            &lt;path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</textarea>
+              </div>
+      <div class="hidden sm:flex sm:items-center">
+        <div class="pl-4 pr-4 self-stretch">
+          <div class="h-full border-l border-gray-200"></div>
+        </div>
+                <button type="button" @click="$refs[`${activeSnippet}ClipboardCode`].select(); document.execCommand(&#39;copy&#39;)" class="ml-3 text-gray-400 hover:text-gray-500">
+          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+            <title>Copy</title>
+            <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+            <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="relative bg-gray-500">
+    <div :class="{ &#39;block&#39;: activeTab === &#39;preview&#39;, &#39;hidden&#39;: activeTab !== &#39;preview&#39; }" class="block">
+      <div x-data="resizableIFrame()" x-init="init()" x-ref="root" :style="&#39;max-width: 100%; width: &#39; + width" class="sm:min-w-preview-mobile relative sm:pr-4" style="max-width: 100%; width: 100%">
+        <iframe x-ref="iframe" class="w-full" id="iFrameResizer2" style="overflow: auto; height: 328px;" src="./Header Sections - Official Tailwind CSS UI Components_files/saved_resource(2).html"></iframe>
+        <div :class="{ &#39;pointer-events-none&#39;: !resizing }" class="absolute opacity-0 inset-0 pointer-events-none"></div>
+        <div x-ref="handle" class="sr-only sm:not-sr-only sm:border-l sm:bg-gray-100 sm:absolute sm:right-0 sm:inset-y-0 sm:flex sm:items-center sm:w-4">
+          <svg class="h-4 w-4 text-gray-600 pointer-events-none" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 5h2v14H8zM14 5h2v14h-2z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div :class="{ &#39;block&#39;: activeTab === &#39;code&#39;, &#39;hidden&#39;: activeTab !== &#39;code&#39; }" class="hidden">
+            <pre :class="{&#39;block&#39;: activeSnippet === &#39;html&#39;, &#39;hidden&#39;: activeSnippet !== &#39;html&#39; }" class=" block scrollbar-none m-0 p-0 overflow-auto text-white text-sm bg-gray-800 leading-normal language-html"><code class="inline-block p-4 scrolling-touch subpixel-antialiased language-html"><span class="token comment">&lt;!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ]
+  }
+  ```
+--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>bg-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>max-w-xl<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Pricing Plans<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-5 text-xl text-gray-500<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Start building for free, then add a site plan to go live. Account plans unlock additional features.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-10 w-full max-w-xs<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>currency<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>block text-base font-medium text-gray-500<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Currency<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mt-1.5 relative<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>currency<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>currency<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>appearance-none block w-full bg-none bg-white border border-gray-300 rounded-md pl-3 pr-10 py-2 text-base text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Argentina (ARS)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Australia (AUD)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">selected</span><span class="token punctuation">&gt;</span></span>United States (USD)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Canada (CAD)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>France (EUR)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Japan (JPY)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Nigeria (NGN)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Switzerland (CHF)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>United Kingdom (GBP)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token comment">&lt;!-- Heroicon name: chevron-down --&gt;</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>h-4 w-4 text-gray-400<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0 0 20 20<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">fill-rule</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>evenodd<span class="token punctuation">"</span></span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z<span class="token punctuation">"</span></span> <span class="token attr-name">clip-rule</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>evenodd<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+          </div>
+  </div>
+</div>
+ 
+          </div>
+  </div>
+
+   </div>
+</main>
+
+
+ <script>
+  function CommandPalette(items, options) {
+    const fuse = new Fuse(items, { threshold: 0.3, keys: ['name', 'category'] })
+    return {
+      isOpen: false,
+      open() {
+        if (this.isOpen) {
+          return
+        }
+        this.search = ''
+        this.isOpen = true
+        setTimeout(() => {
+          this.$refs.search.focus()
+        }, 100)
+      },
+      search: '',
+      filteredItems() {
+        return fuse.search(this.search).map((item, i) => [item, i])
+      },
+      selectUp() {
+        this.selected = Math.max(0, this.selected - 1)
+        this.$nextTick(() => {
+          this.$refs.results.children[this.selected + 1].scrollIntoView({
+            block: 'nearest',
+          })
+        })
+      },
+      selectDown() {
+        this.selected = Math.min(this.filteredItems().length - 1, this.selected + 1)
+        this.$nextTick(() => {
+          this.$refs.results.children[this.selected + 1].scrollIntoView({
+            block: 'nearest',
+          })
+        })
+      },
+      go() {
+        window.location = options.versionPrefix + this.filteredItems()[this.selected][0].item.url
+      },
+      selected: 0,
+    }
+  }
+</script>
+<div style="display: none;" x-data="CommandPalette([{&quot;url&quot;:&quot;\/components\/application-ui\/application-shells\/stacked&quot;,&quot;name&quot;:&quot;Stacked Layouts&quot;,&quot;category&quot;:&quot;Application UI \/ Application Shells&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/application-shells\/sidebar&quot;,&quot;name&quot;:&quot;Sidebar Layouts&quot;,&quot;category&quot;:&quot;Application UI \/ Application Shells&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/application-shells\/multi-column&quot;,&quot;name&quot;:&quot;Multi-Column Layouts&quot;,&quot;category&quot;:&quot;Application UI \/ Application Shells&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/headings\/page-headings&quot;,&quot;name&quot;:&quot;Page Headings&quot;,&quot;category&quot;:&quot;Application UI \/ Headings&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/headings\/card-headings&quot;,&quot;name&quot;:&quot;Card Headings&quot;,&quot;category&quot;:&quot;Application UI \/ Headings&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/headings\/section-headings&quot;,&quot;name&quot;:&quot;Section Headings&quot;,&quot;category&quot;:&quot;Application UI \/ Headings&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/data-display\/description-lists&quot;,&quot;name&quot;:&quot;Description Lists&quot;,&quot;category&quot;:&quot;Application UI \/ Data Display&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/data-display\/stats&quot;,&quot;name&quot;:&quot;Stats&quot;,&quot;category&quot;:&quot;Application UI \/ Data Display&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/lists\/tables&quot;,&quot;name&quot;:&quot;Tables&quot;,&quot;category&quot;:&quot;Application UI \/ Lists&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/lists\/stacked-lists&quot;,&quot;name&quot;:&quot;Stacked Lists&quot;,&quot;category&quot;:&quot;Application UI \/ Lists&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/lists\/grid-lists&quot;,&quot;name&quot;:&quot;Grid Lists&quot;,&quot;category&quot;:&quot;Application UI \/ Lists&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/lists\/feeds&quot;,&quot;name&quot;:&quot;Feeds&quot;,&quot;category&quot;:&quot;Application UI \/ Lists&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/forms\/form-layouts&quot;,&quot;name&quot;:&quot;Form Layouts&quot;,&quot;category&quot;:&quot;Application UI \/ Forms&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/forms\/input-groups&quot;,&quot;name&quot;:&quot;Input Groups&quot;,&quot;category&quot;:&quot;Application UI \/ Forms&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/forms\/select-menus&quot;,&quot;name&quot;:&quot;Select Menus&quot;,&quot;category&quot;:&quot;Application UI \/ Forms&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/forms\/radio-groups&quot;,&quot;name&quot;:&quot;Radio Groups&quot;,&quot;category&quot;:&quot;Application UI \/ Forms&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/forms\/toggles&quot;,&quot;name&quot;:&quot;Toggles&quot;,&quot;category&quot;:&quot;Application UI \/ Forms&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/forms\/sign-in-forms&quot;,&quot;name&quot;:&quot;Sign-in and Registration&quot;,&quot;category&quot;:&quot;Application UI \/ Forms&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/forms\/action-panels&quot;,&quot;name&quot;:&quot;Action Panels&quot;,&quot;category&quot;:&quot;Application UI \/ Forms&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/feedback\/alerts&quot;,&quot;name&quot;:&quot;Alerts&quot;,&quot;category&quot;:&quot;Application UI \/ Feedback&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/navigation\/tabs&quot;,&quot;name&quot;:&quot;Tabs&quot;,&quot;category&quot;:&quot;Application UI \/ Navigation&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/navigation\/navbars&quot;,&quot;name&quot;:&quot;Navbars&quot;,&quot;category&quot;:&quot;Application UI \/ Navigation&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/navigation\/vertical-navigation&quot;,&quot;name&quot;:&quot;Vertical Navigation&quot;,&quot;category&quot;:&quot;Application UI \/ Navigation&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/navigation\/pagination&quot;,&quot;name&quot;:&quot;Pagination&quot;,&quot;category&quot;:&quot;Application UI \/ Navigation&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/navigation\/sidebar-navigation&quot;,&quot;name&quot;:&quot;Sidebar Navigation&quot;,&quot;category&quot;:&quot;Application UI \/ Navigation&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/navigation\/breadcrumbs&quot;,&quot;name&quot;:&quot;Breadcrumbs&quot;,&quot;category&quot;:&quot;Application UI \/ Navigation&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/navigation\/steps&quot;,&quot;name&quot;:&quot;Steps&quot;,&quot;category&quot;:&quot;Application UI \/ Navigation&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/overlays\/modals&quot;,&quot;name&quot;:&quot;Modals&quot;,&quot;category&quot;:&quot;Application UI \/ Overlays&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/overlays\/slide-overs&quot;,&quot;name&quot;:&quot;Slide-overs&quot;,&quot;category&quot;:&quot;Application UI \/ Overlays&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/overlays\/notifications&quot;,&quot;name&quot;:&quot;Notifications&quot;,&quot;category&quot;:&quot;Application UI \/ Overlays&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/elements\/avatars&quot;,&quot;name&quot;:&quot;Avatars&quot;,&quot;category&quot;:&quot;Application UI \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/elements\/badges&quot;,&quot;name&quot;:&quot;Badges&quot;,&quot;category&quot;:&quot;Application UI \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/elements\/buttons&quot;,&quot;name&quot;:&quot;Buttons&quot;,&quot;category&quot;:&quot;Application UI \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/elements\/button-groups&quot;,&quot;name&quot;:&quot;Button Groups&quot;,&quot;category&quot;:&quot;Application UI \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/elements\/dropdowns&quot;,&quot;name&quot;:&quot;Dropdowns&quot;,&quot;category&quot;:&quot;Application UI \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/layout\/containers&quot;,&quot;name&quot;:&quot;Containers&quot;,&quot;category&quot;:&quot;Application UI \/ Layout&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/layout\/panels&quot;,&quot;name&quot;:&quot;Panels&quot;,&quot;category&quot;:&quot;Application UI \/ Layout&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/layout\/list-containers&quot;,&quot;name&quot;:&quot;List containers&quot;,&quot;category&quot;:&quot;Application UI \/ Layout&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/layout\/media-objects&quot;,&quot;name&quot;:&quot;Media Objects&quot;,&quot;category&quot;:&quot;Application UI \/ Layout&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/layout\/dividers&quot;,&quot;name&quot;:&quot;Dividers&quot;,&quot;category&quot;:&quot;Application UI \/ Layout&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/page-examples\/home-screens&quot;,&quot;name&quot;:&quot;Home Screens&quot;,&quot;category&quot;:&quot;Application UI \/ Page Examples&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/page-examples\/detail-screens&quot;,&quot;name&quot;:&quot;Detail Screens&quot;,&quot;category&quot;:&quot;Application UI \/ Page Examples&quot;},{&quot;url&quot;:&quot;\/components\/application-ui\/page-examples\/settings-screens&quot;,&quot;name&quot;:&quot;Settings Screens&quot;,&quot;category&quot;:&quot;Application UI \/ Page Examples&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/heroes&quot;,&quot;name&quot;:&quot;Hero Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/feature-sections&quot;,&quot;name&quot;:&quot;Feature Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/cta-sections&quot;,&quot;name&quot;:&quot;CTA Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/pricing&quot;,&quot;name&quot;:&quot;Pricing Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/header&quot;,&quot;name&quot;:&quot;Header Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/faq-sections&quot;,&quot;name&quot;:&quot;FAQs&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/newsletter-sections&quot;,&quot;name&quot;:&quot;Newsletter Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/stats-sections&quot;,&quot;name&quot;:&quot;Stats&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/testimonials&quot;,&quot;name&quot;:&quot;Testimonials&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/blog-sections&quot;,&quot;name&quot;:&quot;Blog Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/contact-sections&quot;,&quot;name&quot;:&quot;Contact Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/team-sections&quot;,&quot;name&quot;:&quot;Team Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/content-sections&quot;,&quot;name&quot;:&quot;Content Sections&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/footers&quot;,&quot;name&quot;:&quot;Footers&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/sections\/logo-clouds&quot;,&quot;name&quot;:&quot;Logo Clouds&quot;,&quot;category&quot;:&quot;Marketing \/ Page Sections&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/elements\/headers&quot;,&quot;name&quot;:&quot;Headers&quot;,&quot;category&quot;:&quot;Marketing \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/elements\/flyout-menus&quot;,&quot;name&quot;:&quot;Flyout Menus&quot;,&quot;category&quot;:&quot;Marketing \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/elements\/banners&quot;,&quot;name&quot;:&quot;Banners&quot;,&quot;category&quot;:&quot;Marketing \/ Elements&quot;},{&quot;url&quot;:&quot;\/components\/marketing\/page-examples\/pricing-pages&quot;,&quot;name&quot;:&quot;Pricing Pages&quot;,&quot;category&quot;:&quot;Marketing \/ Page Examples&quot;}], { versionPrefix: &#39;&#39; })" x-init="$watch(&#39;search&#39;, value =&gt; { if (value.length === 0) selected = 0 })" x-show="isOpen" @keydown.window.prevent.cmd.k="open()" @keydown.window.prevent.ctrl.k="open()" @keydown.window.prevent.slash="open()" @keydown.window.escape="isOpen = false" class="fixed z-50 px-4 pt-16 flex items-start justify-center inset-0 sm:pt-24">
+  <div x-show="isOpen" x-transition:enter="ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 transition-opacity" style="display: none;">
+    <div class="absolute inset-0 bg-gray-900 opacity-50"></div>
+  </div>
+
+  <div @click.away="isOpen = false" x-show="isOpen" x-transition:enter="ease-out duration-200" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="ease-in duration-150" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" class="relative bg-gray-900 rounded-lg overflow-hidden shadow-xl transform transition-all max-w-lg w-full" style="display: none;">
+    <input @keydown.tab.prevent="" @keydown.prevent.stop.enter="go()" @keydown.prevent.arrow-up="selectUp()" @keydown.prevent.arrow-down="selectDown()" x-ref="search" x-model="search" type="text" style="caret-color: #6b7280" class="appearance-none w-full bg-transparent px-6 py-4 text-gray-300 text-lg placeholder-gray-500 focus:outline-none" placeholder="Find anything...">
+    <div class="border-t border-gray-800" x-show="filteredItems().length &gt; 0" style="display: none;">
+      <ul x-ref="results" style="max-height: 265px;" class="overflow-y-auto">
+        <template hidden="" x-for="([{ item: { name, url, category }}, i]) in filteredItems()" :key="url"></template>
+      </ul>
+    </div>
+  </div>
+</div>
+ 
+
+    <script src="./Header Sections - Official Tailwind CSS UI Components_files/fuse.min.js.download"></script>
+    <script src="./Header Sections - Official Tailwind CSS UI Components_files/app.js.download"></script>
+    <script src="./Header Sections - Official Tailwind CSS UI Components_files/prism.js.download"></script>
+  
+
+</body></html>
